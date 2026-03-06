@@ -64,19 +64,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Mrvikas06&theme=default&hide_border=true&include_all_commits=false&count_private=true" height="160"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Mrvikas06&theme=default&hide_border=true" height="160"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mrvikas06&theme=default&hide_border=true&include_all_commits=false&count_private=true&layout=compact" height="140"/>
-
-</div>
-
----
-
 ## 🏆 Certifications
 
 | Issuer | Certification |
