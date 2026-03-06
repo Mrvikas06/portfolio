@@ -4,23 +4,23 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vikas Kumar Singh — Developer & CSE Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root {
       --white:       #FFFFFF;
-      --off-white:   #F8F9F6;
-      --soft-gray:   #F2F3EF;
-      --sage:        #7A9E7E;
-      --sage-light:  #A8C5A0;
-      --sage-dim:    rgba(122,158,126,0.1);
-      --sage-border: rgba(122,158,126,0.22);
-      --forest:      #4A7550;
-      --ink:         #1C2B1E;
-      --ink2:        #2E3D30;
-      --muted:       #7A8A7C;
-      --muted2:      #A0AFA2;
-      --border:      rgba(28,43,30,0.08);
-      --border2:     rgba(28,43,30,0.05);
+      --off-white:   #F6F7F4;
+      --soft-gray:   #EEEEED;
+      --sage:        #4E8A54;
+      --sage-light:  #7AB87F;
+      --sage-dim:    rgba(78,138,84,0.08);
+      --sage-border: rgba(78,138,84,0.2);
+      --forest:      #2D6233;
+      --ink:         #0D0D0D;
+      --ink2:        #1A1A1A;
+      --muted:       #444444;
+      --muted2:      #777777;
+      --border:      rgba(0,0,0,0.09);
+      --border2:     rgba(0,0,0,0.05);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,8 +29,8 @@
     body {
       background: var(--off-white);
       color: var(--ink);
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 300;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
@@ -56,7 +56,7 @@
     }
 
     .nav-logo {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-weight: 600;
       font-size: 1.15rem;
       color: var(--ink);
@@ -151,7 +151,7 @@
     }
 
     .hero-name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-weight: 700;
       font-size: clamp(3.2rem, 5.5vw, 5.8rem);
       line-height: 1.0;
@@ -165,8 +165,8 @@
 
     .hero-subtitle {
       font-size: 1rem;
-      font-weight: 400;
-      color: var(--muted);
+      font-weight: 500;
+      color: var(--ink2);
       margin: 1.5rem 0 0.5rem;
       letter-spacing: 0.01em;
       opacity: 0;
@@ -174,16 +174,16 @@
     }
 
     .hero-desc {
-      font-size: 0.96rem;
+      font-size: 0.97rem;
       color: var(--muted);
       line-height: 1.9;
       max-width: 460px;
       margin-bottom: 2.5rem;
-      font-weight: 300;
+      font-weight: 400;
       opacity: 0;
       animation: fadeUp 0.8s 0.5s forwards;
     }
-    .hero-desc strong { color: var(--ink2); font-weight: 500; }
+    .hero-desc strong { color: var(--ink); font-weight: 600; }
 
     .hero-ctas {
       display: flex;
@@ -197,7 +197,7 @@
       align-items: center;
       gap: 0.5rem;
       padding: 0.85rem 1.9rem;
-      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.1em;
@@ -289,10 +289,10 @@
     }
     .info-val {
       font-size: 0.85rem;
-      color: var(--ink2);
+      color: var(--ink);
       text-align: right;
       line-height: 1.6;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     .badge-open {
@@ -333,14 +333,14 @@
       margin-bottom: 4rem;
     }
     .s-num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: 0.85rem;
       font-style: italic;
       color: var(--sage);
       font-weight: 400;
     }
     .s-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(1.9rem, 3vw, 2.8rem);
       font-weight: 600;
       color: var(--ink);
@@ -354,7 +354,7 @@
     #about { background: var(--white); }
 
     .about-quote {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(1.3rem, 2.2vw, 1.75rem);
       font-weight: 400;
       font-style: italic;
@@ -368,14 +368,14 @@
     .about-quote em { color: var(--forest); font-style: normal; font-weight: 600; }
 
     .about-bio {
-      font-size: 0.96rem;
-      color: var(--muted);
+      font-size: 0.97rem;
+      color: var(--ink2);
       line-height: 1.9;
       max-width: 680px;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 3rem;
     }
-    .about-bio strong { color: var(--ink2); font-weight: 500; }
+    .about-bio strong { color: var(--ink); font-weight: 600; }
 
     .about-stats {
       display: grid;
@@ -395,7 +395,7 @@
     .stat-box:hover { background: var(--off-white); }
 
     .stat-num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: 2.2rem;
       font-weight: 700;
       color: var(--forest);
@@ -458,7 +458,7 @@
       border-bottom: 1px solid var(--border2);
       font-size: 0.86rem;
       color: var(--ink2);
-      font-weight: 300;
+      font-weight: 400;
       transition: color 0.2s;
     }
     .skill-item:last-child { border-bottom: none; }
@@ -512,16 +512,16 @@
       font-weight: 600;
     }
     .cert-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: 0.98rem;
-      font-weight: 400;
-      color: var(--ink2);
+      font-weight: 500;
+      color: var(--ink);
       line-height: 1.45;
     }
     .cert-year {
       margin-top: 1rem;
       font-size: 0.68rem;
-      color: var(--muted2);
+      color: var(--muted);
     }
 
     /* ── CONTACT ── */
@@ -541,10 +541,10 @@
     }
 
     .contact-intro {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(1.4rem, 2.2vw, 1.9rem);
       font-weight: 400;
-      color: rgba(240,243,238,0.65);
+      color: rgba(240,243,238,0.88);
       line-height: 1.75;
       letter-spacing: -0.01em;
     }
@@ -575,14 +575,14 @@
     }
     .c-link-label {
       font-size: 0.92rem;
-      color: rgba(240,243,238,0.6);
-      font-weight: 300;
+      color: rgba(240,243,238,0.88);
+      font-weight: 400;
       transition: color 0.22s;
     }
     .c-arrow {
       font-size: 1rem;
-      color: rgba(255,255,255,0.2);
-      opacity: 0.5;
+      color: rgba(255,255,255,0.45);
+      opacity: 0.8;
       transition: all 0.22s;
     }
 
