@@ -958,22 +958,36 @@
     <a href="#hero" class="footer-back">Back to top ↑</a>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Scroll reveal
+  <script>
+    // Scroll reveal — threshold 0 + fallback
+    const revealAll = () => document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
       });
-    }, { threshold: 0.08 });
+    }, { threshold: 0, rootMargin: '0px 0px -30px 0px' });
+
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Safety fallback: show all after 1.8s
+    setTimeout(revealAll, 1800);
 
     // Nav shrink on scroll
     const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
-      nav.style.padding = window.scrollY > 50 ? '0.9rem 5vw' : '1.5rem 5vw';
+      nav.style.padding = window.scrollY > 50 ? '0.9rem 6vw' : '1.6rem 6vw';
     });
 
     // Active nav highlight
     const secs = document.querySelectorAll('section[id]');
     const lnks = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      secs.forEach(s => { if (window.scrollY >= s.offsetTop - 180) cur = s.id; });
+      lnks.forEach(a => { a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--forest)' : ''; });
+    });
+  </script>
+
+</body>
+</html>
